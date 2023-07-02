@@ -1,0 +1,29 @@
+@import 'base/variables';
+@import 'base/media';
+@import 'base/animations';
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/advantages';
+@import 'blocks/consultation';
+@import 'blocks/forms';
+@import 'blocks/carousel';
+@import 'blocks/catalog';
+@import 'blocks/reviews';
+@import 'blocks/footer';
+@import 'blocks/modal';
+@import 'blocks/pageup';
+
+*{
+    font-family: 'MuseoModerno', sans-serif;
+}
+.container{
+    position: relative;
+    width: 950px;
+    margin: 0 auto;
+}
+@media (max-width: 768px){
+    .container{
+        width: 80%;
+    }
+}

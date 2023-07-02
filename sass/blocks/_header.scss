@@ -1,0 +1,118 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo{
+        width: 250px;
+        img {
+            width: 100%;
+        }
+    }
+    &__official {
+        text-align: center;
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 12px;
+        span {
+            display: block;   
+            font-size: 18px;
+        }
+    }
+    &__phone {
+        display: block;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: right;
+        color: #FFFFFF;
+        text-decoration: none;
+        &:hover{
+            color:#FFFFFF;
+        }
+    }
+    &__contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+@media (max-width: 768px){
+    .header{
+        &__logo{
+            width: 200px;
+        }
+        &__official {
+            font-size: 12px;
+            span { 
+                font-size: 16px;
+            }
+        }
+        &__phone{
+            font-size: 15px;
+        }
+    }
+}
+@media (max-width: 575px){
+    .header{
+        &__logo{
+            width: 165px;
+        }
+        &__official {
+            font-size: 10px;
+            span { 
+                font-size: 12px;
+            }
+        }
+        &__phone{
+            font-size: 12px;
+        }
+    }
+
+}
+@media (max-width: 425px){
+    .header{
+        &__logo{
+            width: 95px;
+        }
+        &__official {
+            font-size: 8px;
+            span { 
+                font-size: 10px;
+            }
+        }
+        &__phone{
+            font-size: 10px;
+        }
+    }
+}
+@media (max-width: 375px){
+    .header{
+        &__logo{
+            width: 95px;
+        }
+        &__official {
+            font-size: 7px;
+            span { 
+                font-size: 9px;
+            }
+        }
+        &__phone{
+            font-size: 9px;
+        }
+    }
+}
+@media (max-width: 320px){
+    .header{
+        &__logo{
+            width: 90px;
+        }
+        &__official {
+            font-size: 5px;
+            span { 
+                font-size: 6px;
+            }
+        }
+        &__phone{
+            font-size: 6px;
+        }
+    }
+}

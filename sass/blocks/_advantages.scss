@@ -1,0 +1,99 @@
+.advantages{
+    min-height: 475px;
+    padding: 70px 0 65px 0;
+    &__header, &__subheader{
+        text-align: center;
+        color: #0D0D0D;
+        font-weight: 700;
+        font-size: 30px;
+        margin-bottom: 0; 
+    }
+    &__subheader{
+        margin-top: 35px;
+        font-size: 18px; 
+    }
+    &__descr{
+        margin-top: 20px;
+        text-align: center;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        span{
+            text-transform: uppercase;
+            text-decoration: underline;
+            color: $main-color;
+        }
+    }
+    &__icons{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 65px;
+
+    }
+    &__icon{
+        max-width: 275px;
+        display: flex;
+        flex-direction: column;
+        &_animated{
+            animation: heartbeat 1.5s ease infinite;
+        }
+        img{
+            display: block;
+            width: 70px;
+            height: 70px;
+            margin: 0 auto;
+        }
+    }
+
+}
+@media (max-width: 768px){
+    .advantages{
+        &__icon{
+            max-width: 30%;
+        }
+        &__descr{
+            font-size: 12px;
+        }
+    }
+}
+@media (max-width: 575px){
+    .advantages{
+        &__icons{
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+        &__icon{
+            max-width: 275px;
+            img{
+                margin-top: 20px;
+            }   
+        }
+        &__subheader{
+            margin-top: 25px;
+        }
+        &__descr{
+            font-size: 14px;
+        }
+    }
+}
+@media (max-width: 425px){
+    .advantages{
+        &__header{
+            font-size: 27px;
+        }
+    }   
+}
+@media (max-width: 375px){
+    .advantages{
+        &__header{
+            font-size: 24px;
+        }
+    }   
+}
+@media (max-width: 320px){
+    .advantages{
+        &__header{
+            font-size: 20dupx;
+        }
+    }   
+}

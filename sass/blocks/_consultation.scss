@@ -1,0 +1,94 @@
+.consultation{
+    min-height: 680px;
+    padding: 100px 0 108px 0;
+    background: url("../../img/shoe-bg.jpg") center (center/cover) no-repeat;
+    &__header{
+        text-transform: uppercase;
+        color: #FFFFFF;;
+        font-weight: 700;
+        font-size: 36px;
+        margin-bottom: 0; 
+    }
+    &__descr{
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .error{
+        border:1px solid red;
+    }
+    label.error{
+        color:#fff;
+        border:none;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+@media (max-width:768px){
+    .consultation{
+        &__header{
+            font-size: 28px;
+        }
+        &__descr{
+            font-size: 18px;
+        }
+    }
+}
+@media (max-width: 575px){
+    .consultation{
+        &__header{
+            font-size: 21px;
+        }
+        &__descr{
+            font-size: 15px;
+        }
+    }
+}
+@media (max-width: 425px){
+    .consultation{
+        min-height: 480px;
+        padding: 50px 0 54px 0;
+        &__header{
+            font-size: 15px;
+        }
+        &__descr{
+            font-size: 12px;
+        }
+    }
+}
+@media (max-width: 375px){
+    .consultation{
+        min-height: 480px;
+        padding: 50px 0 54px 0;
+        &__header{
+            font-size: 13px;
+        }
+        &__descr{
+            font-size: 10px;
+        }
+        .feed-form{
+            width:180px;
+            input{
+                height: 25px;
+            }
+        }
+    }
+}
+@media (max-width: 320px){
+    .consultation{
+        min-height: 480px;
+        padding: 50px 0 54px 0;
+        &__header{
+            font-size: 11px;
+        }
+        &__descr{
+            font-size: 9px;
+        }
+        .feed-form{
+            width:150px;
+            input{
+                height: 25px;
+            }
+        }
+    }
+}
